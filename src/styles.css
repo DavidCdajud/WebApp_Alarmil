@@ -1,0 +1,30 @@
+/* Global Styles */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #4C5333; /* Color de fondo general */
+}
+
+/* Tipografía para todos los elementos */
+h2, p, input, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Tamaño de los botones global */
+button {
+    width: 223px;
+    height: 64px;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #4C5333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,79 @@
+/* Global Styles for body and html defined in style.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #4C5333; /* Fondo verde global */
+}
+
+/* Contenedor principal de la pantalla de login */
+.login-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; /* Se asegura de que ocupe toda la pantalla */
+background-color: #4C5333; /* Fondo verde */
+}
+
+/* Estilo del contenedor del formulario */
+.form-container {
+text-align: center;
+padding: 40px;
+background-color: #fff; /* Fondo blanco para destacar el formulario */
+border-radius: 10px; /* Bordes redondeados */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+max-width: 600px;
+width: 100%; /* Se adapta a la pantalla sin sobrepasar los 600px */
+}
+
+/* Estilo del logo */
+.logo {
+width: 255px;
+height: 308px;
+filter: grayscale(100%);
+margin-bottom: 20px;
+}
+
+/* Títulos */
+.title {
+color: #4C5333;
+margin-bottom: 20px;
+font-size: 32px;
+}
+
+.subtitle {
+color: #4C5333;
+margin-bottom: 30px;
+font-size: 18px;
+}
+
+/* Estilo de los campos del formulario */
+.form-control {
+width: 100%; /* Ancho completo del contenedor */
+max-width: 500px; /* Máximo de 500px para campos */
+height: 50px;
+font-size: 18px;
+margin-bottom: 20px;
+padding: 10px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+/* Estilo del botón de envío */
+.submit-btn {
+width: 223px;
+height: 64px;
+font-size: 24px;
+font-weight: bold;
+background-color: #4C5333;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+background-color: #3b442b;
+}
