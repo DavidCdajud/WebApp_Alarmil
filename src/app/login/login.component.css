@@ -21,7 +21,6 @@ width: 100%; /* Se adapta a la pantalla sin sobrepasar los 600px */
 .logo {
 width: 255px;
 height: 308px;
-filter: grayscale(100%);
 margin-bottom: 20px;
 }
 
@@ -57,8 +56,8 @@ width: 223px;
 height: 64px;
 font-size: 24px;
 font-weight: bold;
-background-color: #4C5333;
-color: #fff;
+background-color: #AABEB3;
+color: #4C5333;
 border: none;
 border-radius: 5px;
 cursor: pointer;
