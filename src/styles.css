@@ -4,7 +4,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #4C5333; /* Color de fondo general */
+    background: linear-gradient(to top, #609B7D, #4F8376, #01310E, #0D100A); /* Degradado de izquierda a derecha */
 }
 
 /* Tipografía para todos los elementos */

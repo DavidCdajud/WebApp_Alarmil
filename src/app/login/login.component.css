@@ -1,18 +1,9 @@
-/* Global Styles for body and html defined in style.css */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #4C5333; /* Fondo verde global */
-}
-
 /* Contenedor principal de la pantalla de login */
 .login-container {
 display: flex;
 justify-content: center;
 align-items: center;
 height: 100vh; /* Se asegura de que ocupe toda la pantalla */
-background-color: #4C5333; /* Fondo verde */
 }
 
 /* Estilo del contenedor del formulario */
