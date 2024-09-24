@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ChangeDetectorRef } from '@angular/core';
+import { Router } from '@angular/router'; // Asegúrate de importar el Router
 
 @Component({
   selector: 'app-login',
@@ -8,12 +9,13 @@ import { ChangeDetectorRef } from '@angular/core';
 })
 export class LoginComponent {
   showPopup = false;
-  showError = false; // Nuevo estado para el mensaje de error
+  showError = false; // Estado para el mensaje de error
   
   identificacion: string = '';
   password: string = '';
 
-  constructor(private cd: ChangeDetectorRef) {}
+  // Inyecta el Router en el constructor
+  constructor(private cd: ChangeDetectorRef, private router: Router) {}
 
   onSubmit() {
     // Validar si los campos están completos
@@ -33,10 +35,11 @@ export class LoginComponent {
     this.showPopup = true;
     this.cd.detectChanges(); // Forzar la detección de cambios
 
-    // Ocultar el popup después de 3 segundos
+    // Después de 3 segundos, oculta el popup y redirige a la página home
     setTimeout(() => {
       this.showPopup = false;
-      this.cd.detectChanges(); // Forzar la detección de cambios nuevamente
+      this.cd.detectChanges();
+      this.router.navigate(['/home']); // Redirigir a la página home
     }, 3000);
   }
 }

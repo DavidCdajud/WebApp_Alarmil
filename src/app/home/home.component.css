@@ -1,0 +1,217 @@
+/* Contenedor principal */
+.home-container {
+  padding: 20px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+/* Estilo del encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #AABEB3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  filter: grayscale(100%);
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  position: relative;
+  font-size: 24px;
+  color: #4C5333;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.notification-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.settings-icon, .user-icon {
+  font-size: 24px;
+  color: #4C5333;
+  margin-right: 15px;
+}
+
+.user-icon-container {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Sección de Misiones y Alarmas */
+.missions-section, .alarms-section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #FFF;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Tabla */
+
+/* Tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #4C5333;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para sofisticación */
+}
+
+.table thead {
+  text-align: center; /* Centrar texto en los encabezados */
+}
+
+.table th, .table td {
+  padding: 15px;
+  text-align: center; /* Centrar contenido en las celdas */
+  border-bottom: 1px solid #dddddd95;
+}
+
+.table th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table tbody tr {
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+.table tbody tr:hover {
+  background-color: #6B7559; /* Efecto hover */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #3E4A33; /* Alternancia de colores para filas */
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #4C5333;
+}
+
+/* Contenedor del botón flotante y el texto */
+.floating-btn-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* Botón flotante */
+.floating-btn {
+  background-color: #AABEB3;
+  color: #4C5333;
+  border: none;
+  border-radius: 50%; /* Botón redondo */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.floating-btn:hover {
+  background-color: #6B7559;
+  transform: scale(1.05); /* Efecto de hover con escala */
+}
+
+/* Texto "Nueva Alarma" al lado del botón */
+.new-alarm-text {
+  margin-left: 15px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  
+}
+
+/* Estilo general para las etiquetas */
+/* Estilo general para las etiquetas */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 50px;
+}
+
+/* Colores para las misiones */
+.badge-m001 {
+  background-color: #5C8575; /* Color asociado a M001 */
+}
+
+.badge-m002 {
+  background-color: #397051; /* Color asociado a M002 */
+}
+
+/* Colores para las alarmas */
+.badge-ad001 {
+  background-color: #344022; /* Color asociado a AD001 */
+}
+
+.badge-ad002 {
+  background-color: #A4B9B2; /* Color asociado a AD002 */
+}
+
+.badge-ad003 {
+  background-color: #5C8575; /* Color asociado a AD003 */
+}
+
+/* Hover effect */
+.badge:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
