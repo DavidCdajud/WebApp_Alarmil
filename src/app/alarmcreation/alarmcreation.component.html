@@ -1,5 +1,4 @@
 <div class="home-container">
-
   <!-- Encabezado -->
   <header class="header">
     <div class="logo-container">
@@ -9,15 +8,13 @@
       <span class="title">Alarmil</span>
     </div>
     <div class="header-icons">
-      
       <!-- Icono de configuración -->
       <div class="settings-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
           <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
-          <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+          <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52z"/>
         </svg>
       </div>
-
       <!-- Icono de notificaciones -->
       <div class="notification-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
@@ -25,7 +22,6 @@
         </svg>
         <span class="notification-count">9</span>
       </div>
-
       <!-- Icono de usuario -->
       <div class="user-icon-container">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -38,11 +34,11 @@
   
   <!-- Formulario envuelto en un contenedor con clase form-container -->
   <div class="form-container">
-    <form (ngSubmit)="onSubmitAlarm()">
+    <form [formGroup]="alarmForm" (ngSubmit)="onSubmitAlarm()">
       <div class="form-group">
         <label for="hora" class="label-hora">Hora</label>
         <div class='input-group date' id='timepicker'>
-          <input type="time" id="appt" name="appt" min="09:00" max="24:00" required />
+          <input type="time" formControlName="hora" required />
           <span class="input-group-addon">
             <span class="glyphicon glyphicon-time"></span>
           </span>
@@ -52,23 +48,31 @@
       <div class="form-group">
         <label for="fecha" class="label-fecha">Fecha</label>
         <div class='input-group date' id='datepicker'>
-          <input type="date" value="0000-00-00" />
+          <input type="date" formControlName="fecha" required />
           <span class="input-group-addon">
             <span class="glyphicon glyphicon-calendar"></span>
           </span>
         </div>
       </div>
-      
+
       <div class="form-group">
-        <label for="misionDropdown" class="label-mision">Misión</label>
-        <select class="form-control" id="misionDropdown" required>
+        <label for="mision" class="label-mision">Misión</label>
+        <select class="form-control" formControlName="mision" required>
           <option value="" disabled selected>Seleccione una misión</option>
-          <option value="1">M001</option>
-          <option value="2">M002</option>
+          <option value="M001">Misión 001</option>
+          <option value="M002">Misión 002</option>
         </select>
       </div>
-
-      <button type="submit" class="submit-btn">Crear alarma</button>
+      
+      <button type="submit" class="submit-btn" [disabled]="!alarmForm.valid">Crear alarma</button>
     </form>
   </div>
-</div>
+  
+  <!-- Popup Modal -->
+  <div *ngIf="showPopup" id="popup" class="popup-modal">
+    <div class="popup-content">
+      <p>Alarma creada exitosamente</p>
+      <div class="checkmark-container">
+        <span class="checkmark">✔</span>
+      </div>
+   

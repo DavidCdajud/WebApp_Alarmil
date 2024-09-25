@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 
 import { FormsModule } from '@angular/forms';
 import { AlarmcreationComponent } from './alarmcreation/alarmcreation.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [		
@@ -15,11 +16,13 @@ import { AlarmcreationComponent } from './alarmcreation/alarmcreation.component'
     LoginComponent,
       HomeComponent,
       AlarmcreationComponent
+      
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule  
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
