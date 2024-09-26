@@ -1,0 +1,94 @@
+<div class="home-container">
+  <header class="header">
+    <div class="logo-container">
+      <a [routerLink]="['/home']">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Escudo_Ejercito_Nacional_de_Colombia.svg" 
+             alt="Escudo Ejército Nacional de Colombia" 
+             class="logo">
+      </a>
+      <span class="title">Alarmil</span>
+    </div>
+    <div class="header-icons">
+      <!-- Iconos de configuración, notificaciones y usuario -->
+    </div>
+  </header>
+  
+  <h2 class="title">Feedback</h2>
+
+  <!-- Tabla de calificación -->
+  <div class="calificacion-container">
+    <h3>Calificación de equipo</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Calificación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>321894021</td>
+          <td>Sgto. Alvarez Moncada Carlos Andres</td>
+          <td>
+            <span class="calificacion-icons">
+              <i class="fas fa-star filled"></i>
+              <i class="fas fa-star filled"></i>
+              <i class="fas fa-star filled"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>654333425</td>
+          <td>Cpta. Laura Camelo Garzón</td>
+          <td>
+            <span class="calificacion-icons">
+              <i class="fas fa-star filled"></i>
+              <i class="fas fa-star filled"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>432565437</td>
+          <td>Cabo. Francisco Camilo Andrade</td>
+          <td>
+            <span class="calificacion-icons">
+              <i class="fas fa-star filled"></i>
+              <i class="fas fa-star filled"></i>
+              <i class="fas fa-star filled"></i>
+              <i class="fas fa-star filled"></i>
+              <i class="far fa-star"></i>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Observación post-misión -->
+  <div class="observacion-container">
+    <h3>Observación post-misión</h3>
+    <textarea id="observacion" rows="4" cols="50"></textarea>
+  </div>
+
+  <!-- Botones de acción -->
+  <div class="botones-container">
+    <button class="btn" (click)="showPopup('Imprimir informe')">Imprimir informe</button>
+    <button class="btn" (click)="showPopup('Enviar informe')">Enviar informe</button>
+  </div>
+
+  <!-- Popup Modal -->
+  <div *ngIf="showPopupMessage" id="popup" class="popup-modal">
+    <div class="popup-content">
+      <p>{{ popupMessage }}</p>
+      <div class="checkmark-container">
+        <span class="checkmark">✔</span>
+      </div>
+    </div>
+  </div>
+</div>
