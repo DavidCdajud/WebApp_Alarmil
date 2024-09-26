@@ -1,0 +1,112 @@
+.detalle-mision-container {
+    padding: 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+  }
+  
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .info-left, .info-right {
+    width: 45%;
+  }
+  
+  .info-left h3, .info-right h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .info-left p, .info-right table {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #4C5333;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .botones-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #AABEB3;
+    color: #4C5333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3b442b;
+  }
+  
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #4C5333;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para sofisticación */
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd95;
+  }
+  
+  .table th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #6B7559;
+    border-radius: 5px;
+  }
+  
+  .badge-ad001 {
+    background-color: #344022;
+  }
+  
+  .badge-ad002 {
+    background-color: #A4B9B2;
+  }
+  
+  .badge-ad003 {
+    background-color: #5C8575;
+  }
+  

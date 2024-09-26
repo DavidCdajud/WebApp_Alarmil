@@ -1,0 +1,136 @@
+
+/* Tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #4C5333;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para sofisticación */
+}
+
+.table thead {
+  text-align: center; /* Centrar texto en los encabezados */
+}
+
+.table th, .table td {
+  padding: 15px;
+  text-align: center; /* Centrar contenido en las celdas */
+  border-bottom: 1px solid #dddddd95;
+}
+
+.table th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table tbody tr {
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+.table tbody tr:hover {
+  background-color: #6B7559; /* Efecto hover */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #3E4A33; /* Alternancia de colores para filas */
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #4C5333;
+}
+
+/* Contenedor del botón flotante y el texto */
+.floating-btn-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* Botón flotante */
+.floating-btn {
+  background-color: #AABEB3;
+  color: #4C5333;
+  border: none;
+  border-radius: 50%; /* Botón redondo */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.calificacion-icons {
+  display: flex;
+  justify-content: center; /* Centrar las estrellas horizontalmente */
+  align-items: center;
+}
+
+.table td {
+  vertical-align: middle; /* Asegura que el contenido de la celda esté centrado verticalmente */
+}
+
+
+.floating-btn:hover {
+  background-color: #6B7559;
+  transform: scale(1.05); /* Efecto de hover con escala */
+}
+
+/* Texto "Nueva Alarma" al lado del botón */
+.new-alarm-text {
+  margin-left: 15px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  
+}
+
+/* Estilo general para las etiquetas */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 50px;
+}
+
+/* Colores para las misiones */
+.badge-m001 {
+  background-color: #5C8575; /* Color asociado a M001 */
+}
+
+.badge-m002 {
+  background-color: #397051; /* Color asociado a M002 */
+}
+
+/* Colores para las alarmas */
+.badge-ad001 {
+  background-color: #344022; /* Color asociado a AD001 */
+}
+
+.badge-ad002 {
+  background-color: #A4B9B2; /* Color asociado a AD002 */
+}
+
+.badge-ad003 {
+  background-color: #5C8575; /* Color asociado a AD003 */
+}
+
+/* Hover effect */
+.badge:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
