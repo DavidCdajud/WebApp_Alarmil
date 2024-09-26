@@ -30,23 +30,20 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
 - *Node.js*: [Descargar Node.js](https://nodejs.org/) (v18.19.0)
 - *Angular CLI*: Puedes instalarlo globalmente ejecutando el siguiente comando:
 
-
-npm install -g @angular/cli
-  
-Instalación
-
-Sigue los siguientes pasos para clonar y ejecutar el proyecto localmente:
-
+## Paso a paso:
 
 git clone https://github.com/tu-usuario/Alarmil-WebApp.git
+
 cd Alarmil-WebApp
+
+npm install -g @angular/cli
+
 npm install
+
 ng serve
 
 Esto iniciará el servidor de desarrollo y podrás acceder a la aplicación en tu navegador en la URL http://localhost:4200.
 
-
-Estructura del proyecto:
 
 ### Explicación:
 
