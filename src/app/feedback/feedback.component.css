@@ -1,0 +1,187 @@
+.home-container {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+  }
+  
+  .calificacion-container {
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #4285f4;
+  }
+  
+  .table-calificacion {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table-calificacion th, .table-calificacion td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .calificacion-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+  
+  .circle.filled {
+    background-color: #4CAF50;
+  }
+  
+  .observacion-container {
+    margin-bottom: 20px;
+  }
+  
+  .observacion-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .botones-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #AABEB3;
+    color: #4C5333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3b442b;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #4C5333;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para sofisticación */
+  }
+  
+  .table thead {
+    text-align: center; /* Centrar texto en los encabezados */
+  }
+  
+  .table th, .table td {
+    padding: 15px;
+    text-align: center; /* Centrar contenido en las celdas */
+    border-bottom: 1px solid #dddddd95;
+  }
+  
+  .table th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .table tbody tr {
+    transition: background-color 0.3s ease; /* Transición suave para hover */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #6B7559; /* Efecto hover */
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #3E4A33; /* Alternancia de colores para filas */
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: #4C5333;
+  }
+
+  .calificacion-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .calificacion-icons i {
+    font-size: 24px;
+    margin-right: 5px;
+    color: #dabf26; /* Color dorado para las estrellas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filled {
+    color: #dabf26; /* Estrellas llenas de color dorado */
+  }
+  
+  .far {
+    color: #ddd; /* Estrellas vacías en gris claro */
+  }
+  
+  .calificacion-icons {
+    display: flex;
+    justify-content: center; /* Centrar las estrellas horizontalmente */
+    align-items: center;
+  }
+  
+  .table td {
+    vertical-align: middle; /* Asegura que el contenido de la celda esté centrado verticalmente */
+  }
+  
+  .calificacion-container {
+    border: none; /* Eliminar cualquier borde azul */
+    box-shadow: none; /* Eliminar cualquier sombra */
+  }
+  
+
+  .popup-modal {
+    display: flex; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #AABEB3; 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+  }
+  
+  .popup-content p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .checkmark-container {
+    font-size: 40px;
+    color: #4C5333; 
+  }
+  
